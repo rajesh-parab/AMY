@@ -12,8 +12,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @Transactional
+
 @ContextConfiguration(locations = "classpath:amy-banking-app-test-config.xml")
-@TransactionConfiguration(transactionManager = "transactionManager")
+@TransactionConfiguration(transactionManager = "transactionManager",defaultRollback=false)
 public abstract class AbstractAMYBankingTest {
 
 	@Autowired

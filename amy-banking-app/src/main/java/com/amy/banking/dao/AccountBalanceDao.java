@@ -7,5 +7,7 @@ import com.amy.banking.models.AcctBal;
 
 @Repository
 public interface AccountBalanceDao extends JpaRepository<AcctBal, Long> {
+	
+	AcctBal findByAcctId(String acctId);
 
 }

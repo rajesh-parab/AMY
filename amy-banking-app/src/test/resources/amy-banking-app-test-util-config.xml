@@ -12,10 +12,10 @@
 	<!-- DispatcherServlet Context: defines this servlet's request-processing 
 		infrastructure -->
 
-	<context:component-scan base-package="com.amy" >
+	<!-- <context:component-scan base-package="com.amy" >
 	  <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
 	  </context:component-scan>
-	 
+	  -->
  
 
 
