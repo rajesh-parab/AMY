@@ -17,18 +17,27 @@
     </tr>
     <tr>
         <td><form:label path="password">Password</form:label></td>
-        <td><form:input type="password" path="password" /></td>
+        <td><form:input type="" path="password" /></td>
     </tr>
      <tr>
         <td><form:label path="age">Age</form:label></td>
         <td><form:input path="age" /></td>
     </tr>
     <tr>
-        <td colspan="2">
-            <input type="submit" value="Submit"/>
-        </td>
+      <td colspan="2"> <kendo:button name="textButton" type="submit">
+    <kendo:button-content>
+        Login in Amy
+    </kendo:button-content></td>
+</kendo:button>
     </tr>
 </table>  
+
+	 
+	<script>
+    function onClick(e) {
+   //    windows.document.form.login. click (" + $(e.event.target).closest(".k-button").attr("id") + ")");
+    }
+</script>
 </form:form>
 <%-- <form method="post" action="login">
 	<div class="configuration k-widget k-header">
